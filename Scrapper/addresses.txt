@@ -1,4 +1,3 @@
-#TODO: Retrieve Schools in Legon
 School of Economics and Development, Legon
 School of Engineering, Legon
 School of performing Arts new building, legon
@@ -16,8 +15,6 @@ School of Graduate Studies, Legon
 School of Languages, Legon
 School of continuing and distance education, Legon
 
-
-#TODO: Retrieve Hostels in Legon
 Commonwealth Hall, Legon 
 The Great Hall, Legon
 ISSER Conference Hall, Legon
@@ -53,17 +50,14 @@ Addis-Ababa Court, Legon
 Kampala Court, Legon
 Nairobi Court, Legon
 
-#TODO: Retrieve Hospitals in Legon
 University of Ghana Hospital, Legon
 University of Ghana Teaching Hospital, Legon
 University Hospital, Legon
 
-#TODO: Retrieve Colleges in Legon
 College of Humanities, Legon
 College of Basic And Applied Sciences, Legon
 College of Education, Legon
 
-#TODO: Retrieve departments
 Department of Computer Science, Legon
 Department of Economics, Legon
 Department of Geography and Resource Development, Legon
@@ -97,43 +91,41 @@ Department of Oceanograpy, Legon
 Department of Nutritionn and Food Science, Legon
 Department of Archaeology, Legon
 Department of Animal Science, Legon
+Department of Biochemistry, Legon
 Department of Marine and Fisheries Sciences, Legon
 Conficius Institue, Legon
 Institute of Applied Sciece & Technology, Legon
 Institute of African studies, Legon
 New Institute of African Studies, Legon
-Institute of Statistical, Social and Economic Research, Legon
+Institute of Statistical Social and Economic Research, Legon
 Maison Francaise, Legon
 Faculty of Law, Legon
 
-#TODO: Lecture Buildings
 GCB Lecture Building, Legon
 JQB, Legon
 K.A. Busia building, Legon
 Student Representative Council Builidng, Legon
-New N Block
-N Block
+New N Block, Legon
+N Block, Legon
 
-
-#TODO: Retrieve Attractions in Legon
 Athletic Oval, Legon
-Sarbah Field,
-university basic school
-ugcs
-balme li
-night 
-UG Banking Square
+Sarbah Field, Legon
+University Basic School, Legon
+Balme Library, Legon
+Night Market, Legon 
+UG Banking Square, Legon
 University of Ghana Sports Stadium, Legon
 University of Ghana Registry, Legon
-Bush Canteen
-Legon Central Mosque
-University of Ghana Swimming Pool
-Legon Taxi Station
-University of Ghana Sports Directorate
-Ayax Park,
-Ajax 2 
-Bank of Ghana Audiotorium
-International Programmes Office, University of Ghana
+Bush Canteen, Legon
+Central Mosque, Legon
+University of Ghana Swimming Pool, Legon
+Taxi Station, Legon
+University of Ghana Sports Directorate, Legon
+Ayax Park, Legon
+Ajax 2, Legon
+Bank of Ghana Audiotorium, Legon
+International Programmes Office, Legon
 University of Ghana Bookshop, Legon
-Caregie Writing Centre
+Caregie Writing Centre, Legon
 Basketball courts, Legon
+Recreational Quandrangle, Legon
