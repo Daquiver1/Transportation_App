@@ -1,0 +1,8 @@
+,School of nursing, Faculty of arts, School of law, School of Pharmacy, Commonwealth Hall, Legon Hall, Volta Hall
+School of nursing, 0,0.38, 0.7715, 0.11635,0.3524,0.4468 ,0.2109
+Faculty of arts,0.3836, 0, 0.6547, 0.3751, 0.3708, 0.1001, 0.213
+School of law,0.7715, 0.65475, 0, 0.6626, 0.9886, 0.7392, 0.7764
+School of Pharmacy,0.116, 0.375,0.6626,0, 0.445, 0.457, 0.262
+Commonwealth Hall,0.352, 0.370, 0.9886, 0.4450,0, 0.3451,0.216
+Legon Hall,0.4468, 0.1008, 0.739255,0.4576, 0.3451,0, 0.2485
+Volta Hall,0.2109,0.2135, 0.7764, 0.2620, 0.2160, 0.2483, 0
