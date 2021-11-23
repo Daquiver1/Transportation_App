@@ -4,3 +4,4 @@
 /bin
 /dummy_data.csv
 /addresses.txt
+*.iml
