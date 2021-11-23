@@ -5,9 +5,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-public class readCSV {
+import java.io.PrintWriter;  
+
+
+public class ReadCSV {
 
     public static void main(String[] args) throws IOException, CsvException {
+        int average_car_speed;
+
         String source = "School of Law Legon";
         String destination = "Commonwealth Hall Legon";
 
@@ -94,10 +99,23 @@ public class readCSV {
         System.out.println();
         System.out.println("Total Path Distance: " + total_distance);
 
-        int average_car_speed = 50;
+        average_car_speed = 50;
 
-        float timeOfArrival = (float) total_distance / 50;
+        float timeOfArrival = (float) total_distance / average_car_speed;
         System.out.println("Time taken to travel path: " + timeOfArrival + " hour(s)");
+
+        PrintWriter writer = new PrintWriter("Random.txt", "UTF-8");
+        //writer.println(timeofArrival);
+        writer.println(total_distance);
+        writer.print(source);
+        for (String name: routes.keySet()) {
+            String key = name.toString();
+            total_distance += routes.get(name);
+            writer.print(" => " + key);
+        }
+        writer.close();
+
+
     }
 
 

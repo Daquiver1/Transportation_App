@@ -1,6 +1,12 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+import java.io.File; 
+import java.io.PrintWriter; 
+import java.io.FileNotFoundException;
 
 public class Activity extends JFrame{
 	private JLabel startL, stopL;
@@ -9,8 +15,9 @@ public class Activity extends JFrame{
 	private SearchButtonHandler sbHandler;
 	public String SelectedStopLoc, SelectedStartLoc;
 
-	public Activity(){
+	public Activity() throws IOException{
 
+		
 		//Initializing label
 		startL = new JLabel("Start: ",SwingConstants.LEFT);
 		stopL = new JLabel("Stop: ", SwingConstants.LEFT);
@@ -69,7 +76,16 @@ public class Activity extends JFrame{
 		setLocationRelativeTo(null);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		try(PrintWriter writer = new PrintWriter("Location.txt", "UTF-8")){
+        writer.println(SelectedStartLoc);
+        writer.println(SelectedStopLoc);
+        writer.close();
+		
 	}
+	catch (IOException e) {
+
+	}}
 
 	private class SearchButtonHandler implements ActionListener{
 		public void actionPerformed(ActionEvent e){

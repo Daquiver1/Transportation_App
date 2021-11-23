@@ -2,22 +2,39 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+import java.io.File;
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
+
 public class Routes extends JFrame{
 	private JLabel route1, route2, route3;
+	private JLabel time_dist1, time_dist2, time_dist3;
 	private JTextField routeTF1, routeTF2, routeTF3;
 	private JButton againB, endB;
 	private AgainButtonHandler abhandler;
 	private EndButtonHandler ebhandler;
 
 	public Routes()
+	
 	{
+	
+		try(Scanner scanner = new Scanner(new File("Random.txt"))) {
+		String a = scanner.nextLine();
+		String source1 = scanner.nextLine();
+
+		
+			
 		//Instantiaitng Labels
 		route1 = new JLabel("Route1: ");
 		route2 = new JLabel("Route2: ");
 		route3 = new JLabel("Route3: ");
+		time_dist1 = new JLabel("The total distance is " + a + "km");
 
 		//Instantiating TextFields
-		routeTF1 = new JTextField(10);
+		routeTF1 = new JTextField(source1, 10);
 		routeTF2 = new JTextField(10);
 		routeTF3 = new JTextField(10);
 
@@ -45,6 +62,8 @@ public class Routes extends JFrame{
 
 		routeTF1.setLocation(80,40);
 		routeTF1.setSize(150, 30);
+		time_dist1.setLocation(80,60);
+		time_dist1.setSize(250,50);
 		routeTF2.setLocation(80,110);
 		routeTF2.setSize(150, 30);
 		routeTF3.setLocation(80,170);
@@ -60,6 +79,7 @@ public class Routes extends JFrame{
 		pane.add(route2);
 		pane.add(route3);
 		pane.add(routeTF1);
+		pane.add(time_dist1);
 		pane.add(routeTF2);
 		pane.add(routeTF3);
 		pane.add(againB);
@@ -71,6 +91,9 @@ public class Routes extends JFrame{
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
+	catch (FileNotFoundException e) {
+
+	}}
 
 	public class AgainButtonHandler implements ActionListener{
 		public void actionPerformed(ActionEvent e)
