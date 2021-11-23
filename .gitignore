@@ -2,3 +2,5 @@
 ~$Addresses.xlsx
 /java_dependencies
 /bin
+/dummy_data.csv
+/addresses.txt
