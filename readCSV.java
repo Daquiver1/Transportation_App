@@ -13,7 +13,7 @@ public class readCSV {
         String source = "School of Pharmacy";
         String destination = "Faculty of arts";
 
-        String filename = "C:\\Users\\HP\\IdeaProjects\\Studies\\src\\csv\\dummy_data.csv";
+        String filename = "C:\\Users\\Anita Agyepong\\Documents\\Daquiver's Quivers\\Java\\JavatarDemo\\dummy_data.csv";
 
         List<String[]> r;    // this is a list because reader.readAll returns a list.
 

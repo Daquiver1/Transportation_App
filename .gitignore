@@ -1,2 +1,4 @@
 *.class
 ~$Addresses.xlsx
+/java_dependencies
+/bin
