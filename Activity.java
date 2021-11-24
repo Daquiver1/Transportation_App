@@ -2,10 +2,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.*;
 import java.io.File; 
-import java.io.PrintWriter; 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class Activity extends JFrame{
@@ -15,7 +15,7 @@ public class Activity extends JFrame{
 	private SearchButtonHandler sbHandler;
 	public String SelectedStopLoc, SelectedStartLoc;
 
-	public Activity() throws IOException{
+	public Activity(){
 
 		
 		//Initializing label
@@ -35,7 +35,7 @@ public class Activity extends JFrame{
 		start_locations.addItem("JQB");
 		start_locations.addItem("Chemistry Department");
 		start_locations.addItem("CS Department");
-		SelectedStartLoc = (String) start_locations.getSelectedItem();
+		
 
 		stop_locations = new JComboBox<String>();
 		stop_locations.addItem("Legon Hall");
@@ -44,7 +44,7 @@ public class Activity extends JFrame{
 		stop_locations.addItem("JQB");
 		stop_locations.addItem("Chemistry Department");
 		stop_locations.addItem("CS Department");
-		SelectedStopLoc = (String) stop_locations.getSelectedItem();
+		
 
 
 		//Title of window
@@ -77,19 +77,21 @@ public class Activity extends JFrame{
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-		try(PrintWriter writer = new PrintWriter("Location.txt", "UTF-8")){
-        writer.println(SelectedStartLoc);
-        writer.println(SelectedStopLoc);
-        writer.close();
-		
 	}
-	catch (IOException e) {
-
-	}}
 
 	private class SearchButtonHandler implements ActionListener{
 		public void actionPerformed(ActionEvent e){
 			dispose();
+			SelectedStartLoc = (String) start_locations.getSelectedItem();
+			SelectedStopLoc = (String) stop_locations.getSelectedItem();
+			try {
+				FileWriter myWriter = new FileWriter("Location1.txt");
+				myWriter.write(SelectedStartLoc);
+				myWriter.write(SelectedStopLoc);
+				myWriter.flush();
+				myWriter.close();
+			}	catch (IOException k){}
+
 			new Routes();
 
 		}
