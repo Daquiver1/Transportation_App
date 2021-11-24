@@ -1,11 +1,12 @@
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-import java.io.PrintWriter;  
+import java.io.PrintWriter;
 
 
 public class ReadCSV {
@@ -13,8 +14,15 @@ public class ReadCSV {
     public static void main(String[] args) throws IOException, CsvException {
         int average_car_speed;
 
-        String source = "School of Law Legon";
-        String destination = "Commonwealth Hall Legon";
+        String source = "";
+        String destination = "";
+
+        try(Scanner scanner = new Scanner(new File("Location.txt"))) {
+            source = scanner.nextLine();
+            destination = scanner.nextLine();
+        } catch (IOException e) {}
+
+
 
         String filename = "Scrapper/Addresses.csv";
 

@@ -30,7 +30,8 @@ public class Activity extends JFrame{
 		//Initializing combobox
 		start_locations = new JComboBox<String>();
 		start_locations.addItem("Legon Hall");
-		start_locations.addItem("Commonwealth");
+		start_locations.addItem("Balme Library Legon");
+		start_locations.addItem("Commonwealth Hall Legon");
 		start_locations.addItem("Volta Hall");
 		start_locations.addItem("JQB");
 		start_locations.addItem("Chemistry Department");
@@ -38,8 +39,9 @@ public class Activity extends JFrame{
 		
 
 		stop_locations = new JComboBox<String>();
+		stop_locations.addItem("Balme Library Legon");
+		stop_locations.addItem("Commonwealth Hall Legon");
 		stop_locations.addItem("Legon Hall");
-		stop_locations.addItem("Commonwealth");
 		stop_locations.addItem("Volta Hall");
 		stop_locations.addItem("JQB");
 		stop_locations.addItem("Chemistry Department");
@@ -85,13 +87,15 @@ public class Activity extends JFrame{
 			SelectedStartLoc = (String) start_locations.getSelectedItem();
 			SelectedStopLoc = (String) stop_locations.getSelectedItem();
 			try {
-				FileWriter myWriter = new FileWriter("Location1.txt");
-				myWriter.write(SelectedStartLoc);
+				FileWriter myWriter = new FileWriter("Location.txt");
+				myWriter.write(SelectedStartLoc + "\n");
 				myWriter.write(SelectedStopLoc);
 				myWriter.flush();
 				myWriter.close();
 			}	catch (IOException k){}
 
+
+			new ReadCSV();
 			new Routes();
 
 		}
