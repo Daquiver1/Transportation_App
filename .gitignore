@@ -5,3 +5,5 @@
 /dummy_data.csv
 /addresses.txt
 *.iml
+.idea
+out
