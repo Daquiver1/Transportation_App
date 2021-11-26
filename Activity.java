@@ -1,3 +1,5 @@
+import com.opencsv.exceptions.CsvException;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -94,8 +96,14 @@ public class Activity extends JFrame{
 				myWriter.close();
 			}	catch (IOException k){}
 
-
-			new ReadCSV();
+			String[] n = {""};
+			try {
+				ReadCSV.main(n);
+			} catch (IOException ioException) {
+				ioException.printStackTrace();
+			} catch (CsvException csvException) {
+				csvException.printStackTrace();
+			}
 			new Routes();
 
 		}
