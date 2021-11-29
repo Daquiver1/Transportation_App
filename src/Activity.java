@@ -1,14 +1,16 @@
+package src;
+
+import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.FileReader;
-import java.util.*;
-import java.io.File; 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.FileNotFoundException;
+import java.util.List;
+
 
 public class Activity extends JFrame{
 	private JLabel startL, stopL;
@@ -19,7 +21,16 @@ public class Activity extends JFrame{
 
 	public Activity(){
 
-		
+		String[] all_locations = {};
+		try (CSVReader reader = new CSVReader(new FileReader("Scrapper/Addresses.csv"))){
+			List<String[]> adjacencyMatrix = reader.readAll();
+			all_locations = adjacencyMatrix.get(0);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (CsvException e) {
+			e.printStackTrace();
+		}
+
 		//Initializing label
 		startL = new JLabel("Start: ",SwingConstants.LEFT);
 		stopL = new JLabel("Stop: ", SwingConstants.LEFT);
@@ -31,24 +42,18 @@ public class Activity extends JFrame{
 
 		//Initializing combobox
 		start_locations = new JComboBox<String>();
-		start_locations.addItem("Legon Hall");
-		start_locations.addItem("Balme Library Legon");
-		start_locations.addItem("Commonwealth Hall Legon");
-		start_locations.addItem("Volta Hall");
-		start_locations.addItem("JQB");
-		start_locations.addItem("Chemistry Department");
-		start_locations.addItem("CS Department");
+
+		for(int i = 1; i < all_locations.length; i++){
+			start_locations.addItem(all_locations[i]);
+		}
+
 		
 
 		stop_locations = new JComboBox<String>();
-		stop_locations.addItem("Balme Library Legon");
-		stop_locations.addItem("Commonwealth Hall Legon");
-		stop_locations.addItem("Legon Hall");
-		stop_locations.addItem("Volta Hall");
-		stop_locations.addItem("JQB");
-		stop_locations.addItem("Chemistry Department");
-		stop_locations.addItem("CS Department");
-		
+
+		for(int i = 1; i < all_locations.length; i++){
+			stop_locations.addItem(all_locations[i]);
+		}
 
 
 		//Title of window
@@ -58,14 +63,14 @@ public class Activity extends JFrame{
 		Container pane = getContentPane();
 		pane.setLayout(null);
 		startL.setLocation(90,20);
-		startL.setSize(150,60);
+		startL.setSize(300,60);
 		start_locations.setLocation(180,20);
-		start_locations.setSize(120,60);
+		start_locations.setSize(300,60);
 		stopL.setLocation(90,80);
-		stopL.setSize(150,70);
+		stopL.setSize(300,70);
 		stop_locations.setLocation(180,90);
-		stop_locations.setSize(120,60);
-		searchB.setLocation(120, 200);
+		stop_locations.setSize(300,60);
+		searchB.setLocation(250, 200);
 		searchB.setSize(100, 60);
 
 		//placing components
@@ -76,7 +81,7 @@ public class Activity extends JFrame{
 		pane.add(searchB);
 
 		//Size and display
-		setSize(350, 400);
+		setSize(600, 400);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -89,7 +94,7 @@ public class Activity extends JFrame{
 			SelectedStartLoc = (String) start_locations.getSelectedItem();
 			SelectedStopLoc = (String) stop_locations.getSelectedItem();
 			try {
-				FileWriter myWriter = new FileWriter("Location.txt");
+				FileWriter myWriter = new FileWriter("data/LocationQuery.txt");
 				myWriter.write(SelectedStartLoc + "\n");
 				myWriter.write(SelectedStopLoc);
 				myWriter.flush();
@@ -99,11 +104,10 @@ public class Activity extends JFrame{
 			String[] n = {""};
 			try {
 				ReadCSV.main(n);
-			} catch (IOException ioException) {
+			} catch (IOException | CsvException ioException) {
 				ioException.printStackTrace();
-			} catch (CsvException csvException) {
-				csvException.printStackTrace();
 			}
+
 			new Routes();
 
 		}

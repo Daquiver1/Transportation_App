@@ -1,11 +1,11 @@
+package src;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 import java.io.File;
 import java.util.Scanner;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.FileNotFoundException;
 
 
@@ -21,7 +21,7 @@ public class Routes extends JFrame{
 	
 	{
 	
-		try(Scanner scanner = new Scanner(new File("Random.txt"))) {
+		try(Scanner scanner = new Scanner(new File("data/GeneratedRoutes.txt"))) {
 		String a = scanner.nextLine();
 		String source1 = scanner.nextLine();
 
