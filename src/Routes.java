@@ -22,8 +22,15 @@ public class Routes extends JFrame{
 	{
 	
 		try(Scanner scanner = new Scanner(new File("data/GeneratedRoutes.txt"))) {
-		String a = scanner.nextLine();
-		String source1 = scanner.nextLine();
+			String source1 = scanner.nextLine();
+			String d1 = scanner.nextLine();
+			String t1 = scanner.nextLine();
+			String source2 = scanner.nextLine();
+			String d2 = scanner.nextLine();
+			String t2 = scanner.nextLine();
+			String source3 = scanner.nextLine();
+			String d3 = scanner.nextLine();
+			String t3 = scanner.nextLine();
 
 		
 			
@@ -31,12 +38,12 @@ public class Routes extends JFrame{
 		route1 = new JLabel("Route1: ");
 		route2 = new JLabel("Route2: ");
 		route3 = new JLabel("Route3: ");
-		time_dist1 = new JLabel("The total distance is " + a + "km");
+		time_dist1 = new JLabel("The total distance is " + d1 + "km");
 
 		//Instantiating TextFields
 		routeTF1 = new JTextField(source1, 10);
-		routeTF2 = new JTextField(10);
-		routeTF3 = new JTextField(10);
+		routeTF2 = new JTextField(source2, 10);
+		routeTF3 = new JTextField(source3, 10);
 
 		//Instantiating buttons
 		againB = new JButton("Try Again");

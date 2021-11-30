@@ -1,2 +1,9 @@
-1.12698392
-School of Agriculture Legon => Department of Earth Science Legon => Department of Crop Science Legon => Department of Soil Science Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => Faculty of Arts Legon
+School of Pharmacy Legon => GCB Lecture Building Legon => N Block Legon => Recreational Quandrangle Legon => Balme Library Legon => Mensah Sarbah Legon
+23.265399075999998 km
+0.46530798151999997 hrs
+School of Pharmacy Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => Mensah Sarbah Legon
+44.917709265999996 km
+0.8983541853199999 hrs
+School of Pharmacy Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => Mensah Sarbah Legon
+44.459298397 km
+0.8891859679399999 hrs
