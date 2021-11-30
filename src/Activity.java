@@ -13,11 +13,12 @@ import java.util.List;
 
 
 public class Activity extends JFrame{
-	private JLabel startL, stopL;
+	private JLabel startL, stopL, myLabel;
 	private JButton searchB;
 	private JComboBox<String> stop_locations, start_locations;
 	private SearchButtonHandler sbHandler;
 	public String SelectedStopLoc, SelectedStartLoc;
+	private ImageIcon bgimg;
 
 	public Activity(){
 
@@ -31,8 +32,11 @@ public class Activity extends JFrame{
 			e.printStackTrace();
 		}
 
-		//Initializing label
-		startL = new JLabel("Start: ",SwingConstants.LEFT);
+		bgimg = new ImageIcon("C:\\Users\\DANIEL\\Documents\\Daquiver's Quivers\\Java\\Transportation_App\\images\\leg2(mod).jpg");
+      	myLabel = new JLabel(bgimg);
+      	myLabel.setSize(600, 400);
+
+      	startL = new JLabel("Start: ", SwingConstants.LEFT);
 		stopL = new JLabel("Stop: ", SwingConstants.LEFT);
 
 		//Initializing button
@@ -64,21 +68,23 @@ public class Activity extends JFrame{
 		pane.setLayout(null);
 		startL.setLocation(90,20);
 		startL.setSize(300,60);
-		start_locations.setLocation(180,20);
+		start_locations.setLocation(150,20);
 		start_locations.setSize(300,60);
 		stopL.setLocation(90,80);
 		stopL.setSize(300,70);
-		stop_locations.setLocation(180,90);
+		stop_locations.setLocation(150,90);
 		stop_locations.setSize(300,60);
 		searchB.setLocation(250, 200);
 		searchB.setSize(100, 60);
 
 		//placing components
-		pane.add(startL);
-		pane.add(start_locations);
-		pane.add(stopL);
-		pane.add(stop_locations);
-		pane.add(searchB);
+		myLabel.add(startL);
+		myLabel.add(start_locations);
+		myLabel.add(stopL);
+		myLabel.add(stop_locations);
+		myLabel.add(searchB);
+
+		pane.add(myLabel);
 
 		//Size and display
 		setSize(600, 400);
