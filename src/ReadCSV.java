@@ -159,7 +159,7 @@ public class ReadCSV {
     // distance and time of a given route
     public static double[] distance_time(Map<String, Double> routes){
         double distance = 0.0;
-        double average_car_speed = 50.0;
+        double average_car_speed = 7.0; //Average car speed
 
         // distance
         for (String name: routes.keySet()) {
@@ -187,7 +187,7 @@ public class ReadCSV {
             Route route = routes[i];
             writer.println(route.full_path);
             writer.println(route.distance + " km");
-            writer.println(route.time_taken + " hrs");
+            writer.println(route.time_taken + " mins");
         } 
         writer.close();
     }

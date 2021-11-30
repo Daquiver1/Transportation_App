@@ -1,26 +1,9 @@
-Kwapong Hall Legon 
- Liman Hall Legon 
- Basketball courts Legon 
- Jean Nelson Legon 
- Recreational Quandrangle Legon 
- Balme Library Legon 
- Pentagon Block A Legon
-4.109903739 km
-0.08219807478 hrs
-Kwapong Hall Legon 
- Basketball courts Legon 
- Jean Nelson Legon 
- Recreational Quandrangle Legon 
- Caregie Writing Centre Legon 
- University of Ghana Bookshop Legon 
- Pentagon Block A Legon
-4.6694988 km
-0.09338997600000001 hrs
-Kwapong Hall Legon 
- Basketball courts Legon 
- Jean Nelson Legon 
- Recreational Quandrangle Legon 
- Caregie Writing Centre Legon 
- Pentagon Block A Legon
-24.564976546000004 km
-0.49129953092000006 hrs
+School of Economics and Development Legon => Bank of Ghana Audiotorium Legon => Recreational Quandrangle Legon => Balme Library Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
+23.181289954 km
+3.3116128505714286 mins
+School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => School of Engineering Sciences Legon
+44.748076084999994 km
+6.392582297857142 mins
+School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
+44.636829644 km
+6.3766899491428575 mins
