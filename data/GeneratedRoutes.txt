@@ -1,9 +1,9 @@
-School of Economics and Development Legon => Bank of Ghana Audiotorium Legon => Recreational Quandrangle Legon => Balme Library Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
-23.181289954 km
-3.3116128505714286 mins
-School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => School of Engineering Sciences Legon
-44.748076084999994 km
-6.392582297857142 mins
-School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
-44.636829644 km
-6.3766899491428575 mins
+School of Economics and Development Legon => Bank of Ghana Audiotorium Legon => Recreational Quandrangle Legon => Balme Library Legon => Caregie Writing Centre Legon => Department of Psychology Legon
+22.900118337 km
+3.2714454767142853 mins
+School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => Department of Psychology Legon
+44.466904467999996 km
+6.352414924 mins
+School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => Department of Psychology Legon
+44.477556722 km
+6.353936674571429 mins

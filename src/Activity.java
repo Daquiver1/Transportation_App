@@ -32,7 +32,7 @@ public class Activity extends JFrame{
 			e.printStackTrace();
 		}
 
-		bgimg = new ImageIcon("C:\\Users\\DANIEL\\Documents\\Daquiver's Quivers\\Java\\Transportation_App\\images\\leg2(mod).jpg");
+		bgimg = new ImageIcon("images/leg2(mod).jpg");
       	myLabel = new JLabel(bgimg);
       	myLabel.setSize(600, 400);
 
