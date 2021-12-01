@@ -2,7 +2,7 @@
 
 This is a java based transportation app to help users find shortest routes from one location to another in Legon.
 
-# Dependencies
+## Dependencies
 
 This project has 5 dependencies.
 1. opencsv
