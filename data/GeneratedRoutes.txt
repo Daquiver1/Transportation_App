@@ -1,9 +1,9 @@
-School of Economics and Development Legon => Bank of Ghana Audiotorium Legon => Recreational Quandrangle Legon => Balme Library Legon => Caregie Writing Centre Legon => Night Market Legon
-23.898864271 km
+Univiersity of Ghana Business School Legon => K.A. Busia building Legon => Recreational Quandrangle Legon => Balme Library Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
+24.031539878 km
 3.0 mins
-School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => Night Market Legon
-45.465650401999994 km
-6.0 mins
-School of Economics and Development Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => Night Market Legon
-45.000098295 km
-6.0 mins
+Univiersity of Ghana Business School Legon => K.A. Busia building Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => University of Ghana Bookshop Legon => School of Engineering Sciences Legon
+24.355470833000002 km
+3.0 mins
+Univiersity of Ghana Business School Legon => K.A. Busia building Legon => Recreational Quandrangle Legon => Caregie Writing Centre Legon => School of Engineering Sciences Legon
+45.68463473799999 km
+7.0 mins
