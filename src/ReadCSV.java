@@ -2,6 +2,8 @@
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
+import java.lang.Math; 
+
 
 import java.io.*;
 import java.util.*;
@@ -167,11 +169,12 @@ public class ReadCSV {
         }
 
         // time
-        double timeTaken =  distance / average_car_speed;
+        double timeTaken = Math.round(distance / average_car_speed);
+
 
         // print out the details
         System.out.println("Total Path Distance: " + distance);
-        System.out.println("Time taken to travel path: " + timeTaken + " hour(s)");     // Time taken to travel a route.
+        System.out.println("Time taken to travel path: " + timeTaken + " minute(s)");     // Time taken to travel a route.
         System.out.println();
         System.out.println();
 
