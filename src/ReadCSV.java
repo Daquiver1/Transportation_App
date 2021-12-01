@@ -1,7 +1,9 @@
-package src;
+//package src;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
+import java.lang.Math; 
+
 
 import java.io.*;
 import java.util.*;
@@ -159,7 +161,7 @@ public class ReadCSV {
     // distance and time of a given route
     public static double[] distance_time(Map<String, Double> routes){
         double distance = 0.0;
-        double average_car_speed = 50.0;
+        double average_car_speed = 7.0; //Average car speed
 
         // distance
         for (String name: routes.keySet()) {
@@ -167,11 +169,12 @@ public class ReadCSV {
         }
 
         // time
-        double timeTaken =  distance / average_car_speed;
+        double timeTaken = Math.round(distance / average_car_speed);
+
 
         // print out the details
         System.out.println("Total Path Distance: " + distance);
-        System.out.println("Time taken to travel path: " + timeTaken + " hour(s)");     // Time taken to travel a route.
+        System.out.println("Time taken to travel path: " + timeTaken + " minute(s)");     // Time taken to travel a route.
         System.out.println();
         System.out.println();
 
@@ -187,8 +190,8 @@ public class ReadCSV {
             Route route = routes[i];
             writer.println(route.full_path);
             writer.println(route.distance + " km");
-            writer.println(route.time_taken + " hrs");
-        }
+            writer.println(route.time_taken + " mins");
+        } 
         writer.close();
     }
 }
