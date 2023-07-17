@@ -11,7 +11,8 @@ This project has 5 dependencies.
 4. commons-logging
 5. commons-text
 
-All dependencies are stored in the java dependencies folder.
+The dependencies for this project can be found online. 
+If this repo has been helpful to you, please consider starring the repo. 
 
 ### Welcome Page
 ![Our welcome page](/images/Welcome.jpg)
